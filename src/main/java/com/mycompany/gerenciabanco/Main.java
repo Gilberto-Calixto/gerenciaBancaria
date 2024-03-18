@@ -33,5 +33,8 @@ public class Main {
             System.out.println("CPF: ");
             int cpf = scanner.nextInt();
         }
+
     }
+
+
 }
