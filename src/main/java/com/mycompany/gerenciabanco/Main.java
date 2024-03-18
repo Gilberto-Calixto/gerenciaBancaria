@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //bb testes
         dadosUsuario ddUser = new dadosUsuario();
         ddUser.pedirDados();
 
@@ -18,7 +19,7 @@ public class Main {
 
     //classe para receber os dados
     public static class dadosUsuario {
-        Scanner scanner;
+        Scanner scanner = new Scanner(System.in);
 
         private void pedirDados(){
 
@@ -26,6 +27,7 @@ public class Main {
             String nome = scanner.next();
 
             System.out.println("Sobrenome: ");
+            String sobrenome = scanner.next();
 
             System.out.println("idade: ");
             int idade = scanner.nextInt();
