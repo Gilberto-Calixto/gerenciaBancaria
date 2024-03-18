@@ -21,6 +21,10 @@ public class Main {
     public static class dadosUsuario {
         Scanner scanner = new Scanner(System.in);
 
+        private void menu(){
+
+        }
+
         private void pedirDados(){
 
             System.out.println("Nome: ");
@@ -35,5 +39,10 @@ public class Main {
             System.out.println("CPF: ");
             int cpf = scanner.nextInt();
         }
+    }
+
+    public class operacoes{
+
+
     }
 }
