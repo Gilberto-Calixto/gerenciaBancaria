@@ -5,23 +5,35 @@ import java.util.Scanner;
 public class Main {
 
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
 
         //bb testes
-        dadosUsuario ddUser = new dadosUsuario();
-        ddUser.pedirDados();
+
 
         //loop  para manter o usuário no programa até ele apertar em sair
-        /*do {
+        System.out.println("Bem-Vindo ao Banco javasil");
+        String encerrar;
 
-        }while ();*/
+        do {
+            DadosUsuario dadosUser = new DadosUsuario();
+            dadosUser.pedirDados();
+
+            OperacoesBancarias operacoesBancarias = new OperacoesBancarias();
+
+
+            System.out.println("Deseja encerrar: ");
+            encerrar = dadosUser.scanner.next().toLowerCase();
+
+        }while (encerrar != "sim");
     }
 
     //classe para receber os dados
-    public static class dadosUsuario {
-        Scanner scanner = new Scanner(System.in);
+    public static class DadosUsuario {
+        public Scanner scanner = new Scanner(System.in);
 
         private void menu(){
+
+
 
         }
 
@@ -41,8 +53,20 @@ public class Main {
         }
     }
 
-    public class operacoes{
+    public class OperacoesBancarias{
 
+        double saldo;
 
+        private void consultaSaldo(){
+
+        }
+
+        private void deposito(){
+
+        }
+
+        private void retirada(){
+
+        }
     }
 }
